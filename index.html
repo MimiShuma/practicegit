@@ -8,7 +8,57 @@
 </head>
 
 <body>
-    <p>Hello world!!</p>
+    <fieldset>
+        <legend>
+            <h1>HTML Form</h1>
+        </legend>
+        <form action="#" method="get">
+            <div>
+                <label for="firstName">First Name:</label><input type="text" id="firstName" name="first_name"
+                    required="required">
+                <label for="lastName">Last Name:</label><input type="text" id="lastName" name="last_name"
+                    required="required">
+                <label for="age">Age:</label><input type="number" id="age" name="age" required="required">
+            </div>
+            <div>
+                <label for="email">Email:</label><input type="email" id="email" name="email" required="required">
+                <label for="password">Password:</label><input type="password" id="password" name="password"
+                    required="required">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="others">
+                <label for="other">Others</label>
+            </div>
+            <div>
+                <label>Select your device:</label>
+                <input type="checkbox" id="mac" name="selected_device" value="mac">
+                <label for="mac">Macbook</label>
+                <input type="checkbox" id="iphone" name="selected_device" value="iphone">
+                <label for="iphone">iPhone</label>
+                <input type="checkbox" id="ipad" name="selected_device" value="ipad">
+                <label for="ipad">iPad</label>
+            </div>
+            <div>
+                <label for="finder">How did you hear about us?</label>
+                <select id="finder" name="found_us_through">
+                    <option value="social_media">Social Media</option>
+                    <option value="search_engine">Search Engine</option>
+                    <option value="firend">Friend</option>
+                    <option value="others">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="newsLatter">Sign me up for News Letter</label>
+                <input type="checkbox" id="newsLatter" value="checked_in">
+            </div>
+            <input type="submit" value="signup">
+        </form>
+    </fieldset>
 </body>
 
 </html>
